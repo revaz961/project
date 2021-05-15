@@ -1,0 +1,119 @@
+.footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+    margin: 10px auto;
+    width: 90%;
+    background-color: $headerBgColor;
+    border-radius: 5px;
+}
+
+.contact{
+    &__list{
+        height: 100%;
+        list-style: none;
+        list-style-type: none;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-content: center;
+        margin: 0;
+
+        &-item{
+            margin: 15px;
+            text-align: justify;
+        }
+
+        &-link{
+            border: none;
+        }
+    }
+}
+
+.social{
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    align-content: center;
+
+    &__list{
+        list-style: none;
+        list-style-type: none;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-content: center;
+
+        &-item{
+            margin: 15px;
+            text-align: justify;
+        }
+
+        &-link{
+            display: block;
+            width: 30px;
+            height: 30px;
+            padding: 5px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: none;
+
+            &::after{
+                width: 0;
+            }
+            &:hover::after{
+                width: 0;
+                height: 2px;
+                bottom: -5px;
+            }
+        }
+    }
+}
+
+.facebook{
+    background: url(../img/facebook.png) white;
+    background-position: center center;
+
+
+    &:hover{
+        background: url(../img/facebook-active.png) white center center no-repeat ;
+    }
+}
+
+.twitter{
+    background: url(../img/twitter.png);
+    background-position: center center;
+    background-size: 100% 100%;
+
+
+    &:hover{
+        background: url(../img/twitter-active.png) center center no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+
+.youtube{
+    background: url(../img/youtube.png);
+    background-position: center center;
+    background-size: 100% 100%;
+
+
+    &:hover{
+        background: url(../img/youtube-active.png) center center no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    &__text{
+        text-align: center;
+        height: max-content;
+        align-self: center;
+    }
+}
